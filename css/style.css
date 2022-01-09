@@ -1,0 +1,144 @@
+body {
+    background-image: url(../img/beach.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.897);
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+header a {
+    display: block;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: underline orange;
+    color: white;
+}
+
+.title {
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+.content-wrap {
+    margin-bottom: 40px;
+}
+
+.enter {
+    margin-top: 20vh;
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: rgba(51, 51, 51, 0.932);
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+#question {
+    padding: 1vw;
+    text-align: center;
+}
+
+h1 {
+    display: inline-block;
+    background-color: rgba(211, 148, 236, 0.445);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: xx-large;
+    animation: 1s ease-in 0s normal forwards 1 visibility;
+}
+
+
+
+p, label {
+    padding: 5px;
+    color: white;
+    font-size: x-large;
+    
+}
+
+p {
+    padding: 10px;
+    animation: 3s ease-in 0s normal forwards 1 visibility;
+}
+
+#copyright {
+    font-size: large;
+    animation: 6s ease 0s normal forwards 1 visibility;
+}
+
+#tomorrow {
+    font-size: medium;
+    animation: 8s ease-in 0s normal forwards 1 visibility;
+}
+
+label, input {
+    animation: 6s ease 0s normal forwards 1 visibility;
+}
+
+#jokeOfTheDay {
+    margin-top: 7vh;
+    color: white;
+    text-align: center;
+    width: fit-content;
+    padding: 7px;
+    font-size: 1.3em;
+}
+
+#joke {
+    animation: 1s ease-in 0s normal forwards 1 visibility;
+}
+
+#noJoke a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    animation: 6s ease-in 0s normal forwards 1 visibility;
+}
+
+#noJoke a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.897);
+}
+
+.credits, .credits a {
+    padding: 10px;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes visibility {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@media screen and (max-width: 1010px) {
+    .enter {
+        margin-top: 20vh;
+        margin-left: 20%;
+        margin-right: 20%;
+        background-color: rgba(51, 51, 51, 0.932);
+        border-radius: 10px;
+        min-width: 60vw;
+        
+    }
+}

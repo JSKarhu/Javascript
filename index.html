@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">Daily joke</a>
+    </header>
+    <div class="content-wrap">
+    <section class="enter">
+        <div id="question">
+            <h1>Hello!</h1>
+            <p>Would you like to hear a joke?</p>
+            <label for="yes">Yes</label><input type="radio" name="radio" id="yes" onclick="showJoke()">
+            <label for="no">No</label><input type="radio" name="radio" id="no" onclick="showJoke()">
+        </div>
+        <div class="joke">
+            <div id="jokeOfTheDay" hidden>
+                <p id="joke"></p>
+                <p id="copyright"></p>
+                <p id="tomorrow">Come back tomorrow to hear a new joke.</p>
+            </div>
+        </div>
+        <div id="noJoke" hidden>
+            <p>Then you are in the wrong site. <a href="index.html">Try again?</a></p>
+            
+        </div>
+    </section>
+    </div>
+    <footer style="position: fixed; bottom: 0; width: 100%;">
+        <div class="credits">Site by: Joona Karhu <br> Background-image from: <a href="https://pixabay.com/">Pixabay</a></div>
+    </footer>
+    <script src="./JS/code.js" defer></script>
+</body>
+</html>
