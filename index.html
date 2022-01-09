@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Daily Joke</title>
 </head>
 <body>
+    <!-- header with link to reload page -->
     <header>
         <a href="index.html">Daily joke</a>
     </header>
+
+    <!-- joke section -->
     <div class="content-wrap">
     <section class="enter">
         <div id="question">
@@ -20,6 +22,8 @@
             <label for="yes">Yes</label><input type="radio" name="radio" id="yes" onclick="showJoke()">
             <label for="no">No</label><input type="radio" name="radio" id="no" onclick="showJoke()">
         </div>
+
+        <!-- joke & noJoke sections are hidden when page is loaded -->
         <div class="joke">
             <div id="jokeOfTheDay" hidden>
                 <p id="joke"></p>
@@ -29,10 +33,11 @@
         </div>
         <div id="noJoke" hidden>
             <p>Then you are in the wrong site. <a href="index.html">Try again?</a></p>
-            
         </div>
     </section>
     </div>
+
+    <!-- footer with credits -->
     <footer style="position: fixed; bottom: 0; width: 100%;">
         <div class="credits">Site by: Joona Karhu <br> Background-image from: <a href="https://pixabay.com/">Pixabay</a></div>
     </footer>

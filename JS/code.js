@@ -1,3 +1,4 @@
+/* function to get and print the daily joke */
 function get_joke_of_the_day() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -16,6 +17,8 @@ function get_joke_of_the_day() {
 
 get_joke_of_the_day()
 
+
+/* function to hide and show joke sections based on the radio button that is checked */
 function showJoke() {
     if (document.getElementById('yes').checked) {
         document.getElementById('jokeOfTheDay').style.display = 'inline-block';
